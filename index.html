@@ -252,19 +252,19 @@
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="https://tops.tongji.edu.cn/info/1204/2419.htm" target="_blank">Yuhang Chen</a><sup>1,2</sup>,</span>
+                <a href="https://tops.tongji.edu.cn/info/1204/2419.htm" target="_blank">Yuhang Chen</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="https://tops.tongji.edu.cn/info/1031/1921.htm" target="_blank">Jie Sun</a><sup>1,2</sup><sup>,✉</sup>,</span>
+                  <a href="https://tops.tongji.edu.cn/info/1031/1921.htm" target="_blank">Jie Sun</a><sup>1</sup><sup>,✉</sup>,</span>
                   <span class="author-block">
-                    <a href="https://fantastic8124.github.io/" target="_blank">Jialin Fan</a><sup>1,2</sup>,</span>
+                    <a href="https://fantastic8124.github.io/" target="_blank">Jialin Fan</a><sup>1</sup>,</span>
                     <span class="author-block">
-                      and <a href="https://tops.tongji.edu.cn/info/1031/1187.htm" target="_blank">Jian Sun</a><sup>1,2</sup>
+                      and <a href="https://tops.tongji.edu.cn/info/1031/1187.htm" target="_blank">Jian Sun</a><sup>1</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block"><sup>1 </sup>College of Transportation, Tongji University, Shanghai, China<br><sup>2 </sup>Key Laboratory of Road and Traffic Engineering, Ministry of Education, Shanghai, China</span>
+                    <span class="author-block"><sup>1</sup>College of Transportation & Key Laboratory of Road and Traffic Engineering of Ministry of Education, Tongji University, Shanghai, China</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -631,6 +631,29 @@
     </div>
   </div>
 </footer>
+
+<!-- Visitor Counter -->
+<div class="visitor-counter" style="text-align: center; padding: 1rem; background-color: var(--background-secondary); border-top: 1px solid var(--border-color);">
+  <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">
+    <i class="fas fa-eye" style="margin-right: 0.5rem;"></i>
+    Page Views: <span id="visit-count" style="font-weight: 600; color: var(--primary-color);">0</span>
+  </p>
+</div>
+
+<script>
+  // Visitor counter using localStorage
+  (function() {
+    let count = localStorage.getItem('pageVisitCount');
+    if (count === null) {
+      count = 0;
+    } else {
+      count = parseInt(count);
+    }
+    count++;
+    localStorage.setItem('pageVisitCount', count);
+    document.getElementById('visit-count').textContent = count.toLocaleString();
+  })();
+</script>
 
 <!-- Statcounter tracking code -->
   
