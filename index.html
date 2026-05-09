@@ -3,610 +3,894 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation - Yuhang Chen, Jie Sun, Jialin Fan, Jian Sun">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="A novel causal driving pattern transfer framework using diffusion-based distillation for generalizable traffic simulation, enabling cross-domain autonomous driving testing.">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="traffic simulation, autonomous driving, causal reasoning, diffusion models, knowledge distillation, domain generalization, multi-agent interaction, machine learning">
-  <!-- TODO: List all authors -->
+  <meta name="description" content="Project page for Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation.">
+  <meta name="keywords" content="CDPT, traffic simulation, autonomous driving, diffusion model, knowledge distillation, AAAI 2026">
   <meta name="author" content="Yuhang Chen, Jie Sun, Jialin Fan, Jian Sun">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="Tongji University">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="A novel causal driving pattern transfer framework using diffusion-based distillation for generalizable traffic simulation, enabling cross-domain autonomous driving testing.">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://simcdpt.github.io">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://simcdpt.github.io/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation - Research Preview">
-  <meta property="article:published_time" content="2026-01-01T00:00:00.000Z">
-  <meta property="article:author" content="Yuhang Chen">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@Tongji_Univ">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@chen_yuhang_tj">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="A novel causal driving pattern transfer framework using diffusion-based distillation for generalizable traffic simulation, enabling cross-domain autonomous driving testing.">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://simcdpt.github.io/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation - Research Preview">
+  <title>CDPT | Generalizable Traffic Simulation</title>
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation">
-  <meta name="citation_author" content="Chen, Yuhang">
-  <meta name="citation_author" content="Sun, Jie">
-  <meta name="citation_author" content="Fan, Jialin">
-  <meta name="citation_author" content="Sun, Jian">
-  <meta name="citation_publication_date" content="2026">
-  <meta name="citation_conference_title" content="AAAI Conference on Artificial Intelligence">
-  <meta name="citation_pdf_url" content="https://simcdpt.github.io/static/pdfs/Transferring_Causal_Driving_Patterns_for_Generalizable_Traffic_Simulation_with_Diffusion_Based_Distillation.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation - Yuhang Chen, Jie Sun, Jialin Fan, Jian Sun | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/png" href="static/images/framework.png">
-  <link rel="apple-touch-icon" href="static/images/framework.png">
-  
-  <!-- Critical CSS - Load synchronously -->
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation",
-    "description": "A novel causal driving pattern transfer framework using diffusion-based distillation for generalizable traffic simulation, enabling cross-domain autonomous driving testing.",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "Yuhang Chen",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Tongji University"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Jie Sun",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Tongji University"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Jialin Fan",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Tongji University"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Jian Sun",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Tongji University"
-        }
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1e40af;
+      --primary-soft: #eff6ff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --muted-light: #64748b;
+      --line: #e2e8f0;
+      --bg: #ffffff;
+      --bg-soft: #f8fafc;
+      --card: #ffffff;
+      --card-strong: #ffffff;
+      --nav-bg: rgba(255, 255, 255, 0.82);
+      --section-soft-bg: linear-gradient(180deg, #f8fafc, #ffffff);
+      --section-soft-border: rgba(226, 232, 240, 0.75);
+      --teaser-bg: rgba(255, 255, 255, 0.88);
+      --image-bg: #ffffff;
+      --media-bg: #f1f5f9;
+      --abstract-text: #334155;
+      --link: #1d4ed8;
+      --tag-bg: #eff6ff;
+      --tag-text: #1d4ed8;
+      --teacher-tag-bg: #fff7ed;
+      --teacher-tag-text: #c2410c;
+      --shadow: 0 20px 55px rgba(15, 23, 42, 0.10);
+      --shadow-soft: 0 12px 32px rgba(15, 23, 42, 0.08);
+      --radius: 22px;
+      --radius-sm: 14px;
+      --container: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 34rem),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 44%, var(--bg) 100%);
+      line-height: 1.65;
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+
+
+    a {
+      color: var(--primary-dark);
+      text-decoration: none;
+      transition: color 0.18s ease, opacity 0.18s ease, transform 0.18s ease;
+    }
+
+    a:hover { color: var(--primary); }
+
+    img, video {
+      max-width: 100%;
+      display: block;
+    }
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: var(--nav-bg);
+      border-bottom: 1px solid var(--section-soft-border);
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+
+
+    .nav-inner {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      color: var(--ink);
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 11px;
+      background: linear-gradient(135deg, var(--primary), #06b6d4);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      box-shadow: 0 10px 22px rgba(37, 99, 235, 0.28);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .nav-links a { color: var(--muted); }
+    .nav-links a:hover { color: var(--primary); }
+
+
+    .hero {
+      padding: 78px 24px 34px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 42px 5% auto;
+      height: 260px;
+      background: linear-gradient(90deg, rgba(37,99,235,0.08), rgba(14,165,233,0.10), rgba(37,99,235,0.06));
+      filter: blur(50px);
+      border-radius: 999px;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 1080px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .venue-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(37, 99, 235, 0.22);
+      background: rgba(239, 246, 255, 0.86);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(37, 99, 235, 0.10);
+    }
+
+    .venue-badge::before {
+      content: "★";
+      font-size: 12px;
+      color: #2563eb;
+      filter: drop-shadow(0 0 8px rgba(37,99,235,0.35));
+    }
+
+    .venue-badge::after {
+      content: "";
+      position: absolute;
+      top: -60%;
+      bottom: -60%;
+      left: -45%;
+      width: 36%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.78), transparent);
+      transform: rotate(18deg);
+      animation: badgeShine 3.6s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes badgeShine {
+      0% { left: -50%; opacity: 0; }
+      18% { opacity: 1; }
+      46% { left: 115%; opacity: 0; }
+      100% { left: 115%; opacity: 0; }
+    }
+
+    .title {
+      margin: 0 auto 22px;
+      max-width: 1180px;
+      font-size: clamp(34px, 4.35vw, 56px);
+      line-height: 1.08;
+      letter-spacing: -0.048em;
+      font-weight: 800;
+      color: var(--ink);
+      text-wrap: balance;
+    }
+
+    .title-line {
+      display: block;
+    }
+
+    .title .accent {
+      display: inline-block;
+      background: linear-gradient(100deg, #1e3a8a 0%, #2563eb 28%, #06b6d4 48%, #7c3aed 68%, #1e40af 100%);
+      background-size: 260% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: titleGradientFlow 6.5s ease-in-out infinite;
+      text-shadow: 0 18px 44px rgba(37, 99, 235, 0.10);
+    }
+
+    .title .dynamic-word {
+      position: relative;
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .title .dynamic-word::after {
+      content: "";
+      position: absolute;
+      left: 0.04em;
+      right: 0.04em;
+      bottom: -0.08em;
+      height: 0.12em;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(37,99,235,0), rgba(37,99,235,0.72), rgba(6,182,212,0.45), rgba(37,99,235,0));
+      transform-origin: left center;
+      animation: underlineSweep 3.8s ease-in-out infinite;
+    }
+
+    @keyframes titleGradientFlow {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    @keyframes underlineSweep {
+      0%, 100% { transform: scaleX(0.18); opacity: 0.25; }
+      45%, 65% { transform: scaleX(1); opacity: 0.9; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .title .accent,
+      .title .dynamic-word::after,
+      .venue-badge::after {
+        animation: none !important;
       }
-    ],
-    "datePublished": "2026-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "AAAI Conference on Artificial Intelligence"
-    },
-    "url": "https://simcdpt.github.io",
-    "image": "https://simcdpt.github.io/static/images/social_preview.png",
-    "keywords": ["traffic simulation", "autonomous driving", "causal reasoning", "diffusion models", "knowledge distillation", "domain generalization", "multi-agent interaction", "machine learning"],
-    "abstract": "Traffic simulation is essential for validating the safety and reliability of autonomous driving systems, yet data-driven simulation methods often struggle with distribution shifts, limiting their generalizability across diverse datasets (domains). To address this, we present Causal Driving Pattern Transfer (CDPT), a novel two-stage knowledge distillation framework built upon diffusion model to enhance cross-domain generalizability. In Phase I, we implement hybrid self-distillation within the source domain by integrating feature-, response-, and contrastive-level distillation, which enables the model to decompose complex driving behaviors into their core causal components, including scene-conditioned driven patterns, multi-agent interaction dynamics and casual saliency. In Phase II, we introduce a continual distillation strategy: few-shot samples from the target domain are used to initiate generation of diverse synthetic scenarios, allowing the student model to continually adapt to novel environments without retraining on large-scale data. Extensive experiments demonstrates that CDPT achieves strong generalization in both open-loop and closed-loop simulations, effectively generating realistic, interaction-aware behaviors that are critical for scalable and reliable autonomous driving testing.",
-    "citation": "@inproceedings{chen2026transferring,\\n  title={Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation},\\n  author={Chen, Yuhang and Sun, Jie and Fan, Jialin and Sun, Jian},\\n  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},\\n  volume={40},\\n  number={1},\\n  pages={110--118},\\n  year={2026},\\n  doi={10.1609/aaai.v40i1.36970},\\n  url={https://doi.org/10.1609/aaai.v40i1.36970}\\n}",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://simcdpt.github.io"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "Autonomous Driving"
-      },
-      {
-        "@type": "Thing",
-        "name": "Traffic Simulation"
-      },
-      {
-        "@type": "Thing",
-        "name": "Machine Learning"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Tongji University",
-    "url": "https://www.tongji.edu.cn",
-    "logo": "https://simcdpt.github.io/static/images/framework.png",
-    "sameAs": [
-      "https://twitter.com/Tongji_Univ"
-    ]
-  }
-  </script>
+    }
+
+    .authors {
+      margin: 0 auto 10px;
+      max-width: 980px;
+      font-size: 18px;
+      color: var(--muted);
+    }
+
+    .authors a {
+      font-weight: 600;
+      color: var(--link);
+      white-space: nowrap;
+    }
+
+    .affiliation {
+      max-width: 950px;
+      margin: 0 auto 28px;
+      color: var(--muted-light);
+      font-size: 15px;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 22px 0 0;
+    }
+
+    .button,
+    .button.secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 132px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 23, 42, 0.12);
+      background: linear-gradient(135deg, #334155, #111827);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 15px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease, border-color 0.18s ease;
+    }
+
+    .button:hover,
+    .button.secondary:hover {
+      color: #ffffff;
+      transform: translateY(-2px);
+      filter: brightness(1.05);
+      border-color: rgba(15, 23, 42, 0.22);
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.20);
+    }
+
+    .section {
+      padding: 60px 24px;
+    }
+
+    .section.soft {
+      background: var(--section-soft-bg);
+      border-top: 1px solid var(--section-soft-border);
+      border-bottom: 1px solid var(--section-soft-border);
+    }
+
+    .container {
+      max-width: var(--container);
+      margin: 0 auto;
+    }
+
+    .narrow {
+      max-width: var(--container);
+      margin: 0 auto;
+    }
+
+    .teaser-card {
+      margin-top: 36px;
+      padding: 16px;
+      border-radius: 28px;
+      background: var(--teaser-bg);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .teaser-card img {
+      width: 100%;
+      border-radius: 18px;
+      background: var(--image-bg);
+    }
+
+    .caption {
+      margin: 12px auto 0;
+      max-width: 880px;
+      color: var(--muted-light);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .section-title {
+      margin: 0 0 16px;
+      text-align: center;
+      font-size: clamp(28px, 3.1vw, 42px);
+      letter-spacing: -0.035em;
+      line-height: 1.12;
+      color: var(--ink);
+    }
+
+    .section-kicker {
+      display: block;
+      margin: 0 auto 10px;
+      text-align: center;
+      color: var(--primary-dark);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .section-desc {
+      margin: 0 auto 34px;
+      max-width: 980px;
+      color: var(--muted);
+      font-size: 17px;
+      text-align: justify;
+      text-align-last: left;
+    }
+
+    .abstract-card {
+      width: 100%;
+      padding: 34px 38px;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .abstract-card p {
+      max-width: 980px;
+      margin: 0 auto 16px;
+      color: var(--abstract-text);
+      font-size: 16.5px;
+      text-align: justify;
+      text-align-last: left;
+    }
+
+    .abstract-card p:last-child { margin-bottom: 0; }
+
+    .group-block {
+      margin-top: 36px;
+    }
+
+    .group-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .group-title {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .group-title::before {
+      content: "";
+      width: 11px;
+      height: 11px;
+      border-radius: 99px;
+      background: var(--primary);
+      box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.12);
+    }
+
+    .group-title.teacher::before {
+      background: #f97316;
+      box-shadow: 0 0 0 5px rgba(249, 115, 22, 0.13);
+    }
+
+    .group-note {
+      color: var(--muted-light);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .grid-three {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .grid-nine {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .demo-card {
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.07);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .demo-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 42px rgba(15, 23, 42, 0.11);
+      border-color: rgba(37, 99, 235, 0.24);
+    }
+
+    .media-wrap {
+      aspect-ratio: 16 / 10;
+      background: var(--media-bg);
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .media-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .card-body {
+      padding: 16px 17px 18px;
+    }
+
+
+    .card-title {
+      margin: 0 0 7px;
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .card-text {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+      text-align: justify;
+      text-align-last: left;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--tag-text);
+      background: var(--tag-bg);
+    }
+
+    .tag.teacher {
+      color: var(--teacher-tag-text);
+      background: var(--teacher-tag-bg);
+    }
+
+    .bib-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--card);
+      color: var(--ink);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--line);
+      transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .bib-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 18px 22px;
+      background: linear-gradient(135deg, var(--primary-soft), transparent);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .bib-label {
+      font-weight: 800;
+      color: var(--primary-dark);
+    }
+
+    .copy-btn {
+      border: 1px solid rgba(15, 23, 42, 0.12);
+      border-radius: 999px;
+      padding: 8px 16px;
+      cursor: pointer;
+      background: linear-gradient(135deg, #334155, #111827);
+      color: #ffffff;
+      font-weight: 800;
+      font-family: inherit;
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.13);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease, border-color 0.18s ease;
+    }
+
+    .copy-btn:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+      border-color: rgba(15, 23, 42, 0.22);
+      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.18);
+    }
+
+    pre {
+      margin: 0;
+      padding: 24px;
+      overflow-x: auto;
+      white-space: pre;
+      font-size: 14px;
+      line-height: 1.65;
+      background: rgba(248, 250, 252, 0.72);
+      color: var(--ink);
+    }
+
+    code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    }
+
+    .footer {
+      padding: 32px 24px 48px;
+      text-align: center;
+      color: var(--muted-light);
+      font-size: 14px;
+    }
+
+    .footer a { font-weight: 700; }
+
+    .visitor-counter {
+      margin: 0 auto 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border: 1px solid rgba(148, 163, 184, 0.32);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: 0 12px 26px rgba(15, 23, 42, 0.08);
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .visitor-counter .counter-icon {
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    .visitor-counter .counter-number {
+      min-width: 4.5em;
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .visitor-counter .counter-label {
+      color: var(--muted-light);
+      font-size: 13px;
+    }
+
+    .busuanzi-raw-value {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width: 900px) {
+      .nav-inner { flex-direction: column; align-items: flex-start; }
+      .nav-links { flex-wrap: wrap; gap: 12px; }
+      .hero { padding-top: 52px; }
+      .grid-three, .grid-nine { grid-template-columns: 1fr; }
+      .group-header { align-items: flex-start; flex-direction: column; }
+      .abstract-card { padding: 26px 22px; }
+      .section { padding: 46px 18px; }
+      .section-desc { text-align: justify; }
+    }
+
+    @media (max-width: 560px) {
+      .title { font-size: 31px; letter-spacing: -0.035em; }
+      .title-line { display: inline; }
+      .authors { font-size: 16px; }
+      .button { width: 100%; }
+      .button-row { max-width: 320px; margin-left: auto; margin-right: auto; }
+      .teaser-card { padding: 10px; border-radius: 20px; }
+      .teaser-card img { border-radius: 14px; }
+      pre { font-size: 12.5px; padding: 18px; }
+    }
+  </style>
 </head>
+
 <body>
-
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- More Works Dropdown -->
-  <!-- <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="CDPT project page home">
+        <span class="brand-mark">CD</span>
+        <span>CDPT</span>
+      </a>
+      <div class="nav-links" aria-label="Page navigation">
+        <a href="#abstract">Abstract</a>
+        <a href="#womd">WOMD</a>
+        <a href="#interaction">INTERACTION</a>
+        <a href="#onsite">OnSite</a>
+        <a href="#bibtex">BibTeX</a>
       </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <!-- <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <!-- <h5>Paper Title 1</h5> -->
-            <!-- TODO: Replace with brief description -->
-            <!-- <p>Brief description of the work and its main contribution.</p> -->
-            <!-- TODO: Replace with venue and year -->
-            <!-- <span class="work-venue">Conference/Journal 2024</span> -->
-          <!-- </div> -->
-          <!-- <i class="fas fa-external-link-alt"></i> -->
-        <!-- </a> -->
-        <!-- TODO: Add more related works or remove extra items -->
-        <!-- <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a> -->
-      <!-- </div> -->
-    <!-- </div -->
-  <!-- </div> -->
+    </div>
+  </nav>
 
-<main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation</h1>
+  <header class="hero" id="top">
+    <div class="hero-content">
+      <div class="venue-badge">AAAI Main Track 2026 Poster</div>
+      <h1 class="title">
+        <span class="title-line">Transferring Causal Driving Patterns for</span>
+        <span class="title-line accent dynamic-word">Generalizable Traffic Simulation</span>
+        <span class="title-line">with Diffusion-Based Distillation</span>
+      </h1>
 
-            <!-- TODO: Replace with your paper conference/journal info -->
-            <div class="conference-info">
-              <p class="is-size-4 has-text-weight-bold has-text-grey-dark">AAAI Main Track 2026 Poster</p>
-            </div>
-            <div class="mb-5"></div>
+      <p class="authors">
+        <a href="https://tops.tongji.edu.cn/" target="_blank" rel="noopener">Yuhang Chen</a><sup>1</sup>,
+        <a href="https://tops.tongji.edu.cn/" target="_blank" rel="noopener">Jie Sun</a><sup>1,✉</sup>,
+        <a href="https://fantastic8124.github.io/" target="_blank" rel="noopener">Jialin Fan</a><sup>1</sup>, and
+        <a href="https://tops.tongji.edu.cn/" target="_blank" rel="noopener">Jian Sun</a><sup>1</sup>
+      </p>
+      <p class="affiliation">
+        <sup>1</sup>College of Transportation &amp; Key Laboratory of Road and Traffic Engineering of Ministry of Education, Tongji University, Shanghai, China
+      </p>
 
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="https://tops.tongji.edu.cn/info/1204/2419.htm" target="_blank">Yuhang Chen</a><sup>1</sup>,</span>
-                <span class="author-block">
-                  <a href="https://tops.tongji.edu.cn/info/1031/1921.htm" target="_blank">Jie Sun</a><sup>1</sup><sup>,✉</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://fantastic8124.github.io/" target="_blank">Jialin Fan</a><sup>1</sup>,</span>
-                    <span class="author-block">
-                      and <a href="https://tops.tongji.edu.cn/info/1031/1187.htm" target="_blank">Jian Sun</a><sup>1</sup>
-                  </span>
-                  </div>
+      <div class="button-row">
+        <a class="button" href="https://ojs.aaai.org/index.php/AAAI/article/view/36970" target="_blank" rel="noopener">Paper</a>
+        <a class="button" href="https://github.com/Nova-chen151/SIM-CDPT" target="_blank" rel="noopener">Code</a>
+        <a class="button secondary" href="static/pdfs/CDPT_Appendix.pdf" target="_blank" rel="noopener">Supplementary</a>
+        <a class="button secondary" href="static/pdfs/AAAI_Poster.pdf" target="_blank" rel="noopener">Poster</a>
+      </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block"><sup>1</sup>College of Transportation & Key Laboratory of Road and Traffic Engineering of Ministry of Education, Tongji University, Shanghai, China</span>
-                  </div>
+      <div class="teaser-card">
+        <img src="static/images/framework.png" alt="Model framework">
+      </div>
+      <p class="caption">Overview of the proposed Causal Driving Pattern Transfer framework.</p>
+    </div>
+  </header>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/36970" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-external-link-alt"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+  <section class="section" id="abstract">
+    <div class="narrow">
+      <span class="section-kicker">Overview</span>
+      <h2 class="section-title">Abstract</h2>
+      <div class="abstract-card">
+        <p>Traffic simulation is essential for validating the safety and reliability of autonomous driving systems, yet data-driven simulation methods often struggle with distribution shifts, limiting their generalizability across diverse datasets (domains). To address this, we present Causal Driving Pattern Transfer (CDPT), a novel two-stage knowledge distillation framework built upon diffusion model to enhance cross-domain generalizability.</p>
+        <p>In Phase I, we implement hybrid self-distillation within the source domain by integrating feature-, response-, and contrastive-level distillation, which enables the model to decompose complex driving behaviors into their core causal components, including scene-conditioned driven patterns, multi-agent interaction dynamics and casual saliency.</p>
+        <p>In Phase II, we introduce a continual distillation strategy: few-shot samples from the target domain are used to initiate generation of diverse synthetic scenarios, allowing the student model to continually adapt to novel environments without retraining on large-scale data.</p>
+        <p>Extensive experiments demonstrate that CDPT achieves strong generalization in both open-loop and closed-loop simulations, effectively generating realistic, interaction-aware behaviors that are critical for scalable and reliable autonomous driving testing.</p>
+      </div>
+    </div>
+  </section>
 
-                    <span class="link-block">
-                      <a href="https://github.com/Nova-chen151/SIM-CDPT" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Code</span>
-                    </a>
-                  </span>
+  <section class="section soft" id="womd">
+    <div class="container">
+      <span class="section-kicker">Closed-loop Simulation</span>
+      <h2 class="section-title">Closed-loop Simulation Performance on WOMD</h2>
+      <p class="section-desc">Closed-loop simulation evaluates the model's ability to generate realistic interaction behaviors for AV testing, where AVs replay observed trajectories from the WOMD, and background vehicles (BVs) are simulated to create realistic traffic interactions. We assess performance on 914 unseen WOMD scenarios.</p>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/CDPT_Appendix.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+      <div class="group-block">
+        <div class="group-header">
+          <h3 class="group-title teacher">Teacher</h3>
+          <span class="group-note">Observed failure cases under distribution shift</span>
+        </div>
+        <div class="grid-three">
+          <article class="demo-card">
+            <div class="media-wrap"><img src="static/gif/WOMD_Closed_loop_gif/Teacher/simulation_1dc26b7531fd9e2f.gif" alt="Teacher simulation 1dc26b75 GIF"></div>
+            <div class="card-body"><span class="tag teacher">Teacher</span><h4 class="card-title">Simulation 1dc26b75</h4><p class="card-text">Violate signals</p></div>
+          </article>
+          <article class="demo-card">
+            <div class="media-wrap"><img src="static/gif/WOMD_Closed_loop_gif/Teacher/simulation_2a6ced5bbb486b15.gif" alt="Teacher simulation 2a6ced5b GIF"></div>
+            <div class="card-body"><span class="tag teacher">Teacher</span><h4 class="card-title">Simulation 2a6ced5b</h4><p class="card-text">Static and erratic behaviors</p></div>
+          </article>
+          <article class="demo-card">
+            <div class="media-wrap"><img src="static/gif/WOMD_Closed_loop_gif/Teacher/simulation_e86f0a2f4981774b.gif" alt="Teacher simulation e86f0a2f GIF"></div>
+            <div class="card-body"><span class="tag teacher">Teacher</span><h4 class="card-title">Simulation e86f0a2f</h4><p class="card-text">Multi-agent crashes</p></div>
+          </article>
+        </div>
+      </div>
 
-                    <span class="link-block">
-                      <a href="static/pdfs/AAAI_Poster.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-image"></i>
-                      </span>
-                      <span>Poster</span>
-                    </a>
-                  </span>
-              </div>
-
-              <!-- Model framework figure (instead of poster PDF preview) -->
-              <div class="poster-container mt-6">
-                <div class="content has-text-centered">
-                  <img src="static/images/framework.png" alt="Model framework" style="width:100%; height:auto;">
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="group-block">
+        <div class="group-header">
+          <h3 class="group-title">CDPT</h3>
+          <span class="group-note">Stable and interaction-aware closed-loop behavior</span>
+        </div>
+        <div class="grid-three">
+          <article class="demo-card">
+            <div class="media-wrap"><img src="static/gif/WOMD_Closed_loop_gif/CDPT/simulation_1dc26b7531fd9e2f.gif" alt="CDPT simulation 1dc26b75 GIF"></div>
+            <div class="card-body"><span class="tag">CDPT</span><h4 class="card-title">Simulation 1dc26b75</h4><p class="card-text">Stops at red lights and yields correctly</p></div>
+          </article>
+          <article class="demo-card">
+            <div class="media-wrap"><img src="static/gif/WOMD_Closed_loop_gif/CDPT/simulation_2a6ced5bbb486b15.gif" alt="CDPT simulation 2a6ced5b GIF"></div>
+            <div class="card-body"><span class="tag">CDPT</span><h4 class="card-title">Simulation 2a6ced5b</h4><p class="card-text">Smooth left turn and stable</p></div>
+          </article>
+          <article class="demo-card">
+            <div class="media-wrap"><img src="static/gif/WOMD_Closed_loop_gif/CDPT/simulation_e86f0a2f4981774b.gif" alt="CDPT simulation e86f0a2f GIF"></div>
+            <div class="card-body"><span class="tag">CDPT</span><h4 class="card-title">Simulation e86f0a2f</h4><p class="card-text">Smooth merge without collisions</p></div>
+          </article>
         </div>
       </div>
     </div>
   </section>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Traffic simulation is essential for validating the safety and reliability of autonomous driving systems, yet data-driven simulation methods often struggle with distribution shifts, limiting their generalizability across diverse datasets (domains). To address this, we present Causal Driving Pattern Transfer (CDPT), a novel two-stage knowledge distillation framework built upon diffusion model to enhance cross-domain generalizability. In Phase I, we implement hybrid self-distillation within the source domain by integrating feature-, response-, and contrastive-level distillation, which enables the model to decompose complex driving behaviors into their core causal components, including scene-conditioned driven patterns, multi-agent interaction dynamics and casual saliency. In Phase II, we introduce a continual distillation strategy: few-shot samples from the target domain are used to initiate generation of diverse synthetic scenarios, allowing the student model to continually adapt to novel environments without retraining on large-scale data. Extensive experiments demonstrates that CDPT achieves strong generalization in both open-loop and closed-loop simulations, effectively generating realistic, interaction-aware behaviors that are critical for scalable and reliable autonomous driving testing.          </p>
+  <section class="section" id="interaction">
+    <div class="container">
+      <span class="section-kicker">Cross-domain Generalization</span>
+      <h2 class="section-title">Closed-loop Simulation Performance on INTERACTION</h2>
+      <p class="section-desc">To evaluate model generalization in diverse traffic environments, we conduct closed-loop simulation experiments on 498 dense, interaction-heavy scenarios from the INTERACTION dataset, contrasting with WOMD scenarios.</p>
+
+      <div class="group-block">
+        <div class="group-header">
+          <h3 class="group-title teacher">Teacher</h3>
+          <span class="group-note">Baseline demonstrations</span>
+        </div>
+        <div class="grid-three">
+          <article class="demo-card">
+            <div class="media-wrap"><img src="static/gif/INTERACTION_Closed_loop_gif/Baseline/DR_CHN_Merging_ZS0_BSL.gif" alt="Baseline DR_CHN_Merging_ZS0 GIF"></div>
+            <div class="card-body"><span class="tag teacher">Teacher</span><h4 class="card-title">DR_CHN_Merging_ZS0</h4></div>
+          </article>
+          <article class="demo-card">
+            <div class="media-wrap"><img src="static/gif/INTERACTION_Closed_loop_gif/Baseline/DR_CHN_Roundabout_LN_BSL.gif" alt="Baseline DR_CHN_Roundabout_LN GIF"></div>
+            <div class="card-body"><span class="tag teacher">Teacher</span><h4 class="card-title">DR_CHN_Roundabout_LN</h4></div>
+          </article>
+          <article class="demo-card">
+            <div class="media-wrap"><img src="static/gif/INTERACTION_Closed_loop_gif/Baseline/DR_USA_Intersection_GL_BSL.gif" alt="Baseline DR_USA_Intersection_GL GIF"></div>
+            <div class="card-body"><span class="tag teacher">Teacher</span><h4 class="card-title">DR_USA_Intersection_GL</h4></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="group-block">
+        <div class="group-header">
+          <h3 class="group-title">CDPT</h3>
+          <span class="group-note">Transferred behavior patterns</span>
+        </div>
+        <div class="grid-three">
+          <article class="demo-card">
+            <div class="media-wrap"><img src="static/gif/INTERACTION_Closed_loop_gif/CDPT/DR_CHN_Merging_ZS0_CDPT.gif" alt="CDPT DR_CHN_Merging_ZS0 GIF"></div>
+            <div class="card-body"><span class="tag">CDPT</span><h4 class="card-title">DR_CHN_Merging_ZS0</h4></div>
+          </article>
+          <article class="demo-card">
+            <div class="media-wrap"><img src="static/gif/INTERACTION_Closed_loop_gif/CDPT/DR_CHN_Roundabout_LN_CDPT.gif" alt="CDPT DR_CHN_Roundabout_LN GIF"></div>
+            <div class="card-body"><span class="tag">CDPT</span><h4 class="card-title">DR_CHN_Roundabout_LN</h4></div>
+          </article>
+          <article class="demo-card">
+            <div class="media-wrap"><img src="static/gif/INTERACTION_Closed_loop_gif/CDPT/DR_USA_Intersection_GL_CDPT.gif" alt="CDPT DR_USA_Intersection_GL GIF"></div>
+            <div class="card-body"><span class="tag">CDPT</span><h4 class="card-title">DR_USA_Intersection_GL</h4></div>
+          </article>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
 
+  <section class="section soft" id="onsite">
+    <div class="container">
+      <span class="section-kicker">AV Testing</span>
+      <h2 class="section-title">AV Testing Performance on OnSite Benchmark</h2>
+      <p class="section-desc">Furthermore, we evaluate the effectiveness of the CDPT framework in closed-loop AV testing using the <a href="https://www.onsite.com.cn/" target="_blank" rel="noopener">OnSite</a> platform, a standardized benchmark for zero-shot scenario generation and safety-focused simulation. Each test case provides a high-definition map and a 31-frame prefix of agent states, requiring models to synthesize full traffic scenes based solely on partial observations. The benchmark includes a wide range of traffic scenarios such as merges, roundabouts, signalized intersections, and urban environments with vulnerable road users.</p>
 
-
-<!-- GIF Galleries -->
-<section class="section">
-  <div class="container">
-    <h2 class="title is-3">Closed-loop Simulation Performance on WOMD</h2>
-    <div class="content has-text-justified mb-5">
-      <p class="is-size-6">
-        <!-- TODO: Add description text for WOMD comparison here -->
-        Closed-loop simulation evaluates the model's ability to generate realistic interaction behaviors for AV testing, where AVs replay observed trajectories from the WOMD, and background vehicles (BVs) are simulated to create realistic traffic interactions. We assess performance on 914 unseen WOMD scenarios.
-      </p>
-    </div>
-
-    <p class="gif-section-title" style="background-color: #fff7ed; border-color: #f97316; color: #f97316;">Teacher</p>
-    <div class="columns">
-      <div class="column is-one-third">
-        <div class="box has-text-centered gif-box">
-          <p class="is-size-6 has-text-weight-semibold">Simulation 1dc26b75</p>
-          <figure class="image">
-            <img src="static/gif/WOMD_Closed_loop_gif/Teacher/simulation_1dc26b7531fd9e2f.gif" alt="Teacher simulation 1dc26b75 GIF" loading="lazy">
-          </figure>
-          <p class="is-size-6 has-text-weight-bold mt-2" style="color: #f97316;">Violate signals</p>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered gif-box">
-          <p class="is-size-6 has-text-weight-semibold">Simulation 2a6ced5b</p>
-          <figure class="image">
-            <img src="static/gif/WOMD_Closed_loop_gif/Teacher/simulation_2a6ced5bbb486b15.gif" alt="Teacher simulation 2a6ced5b GIF" loading="lazy">
-          </figure>
-          <p class="is-size-6 has-text-weight-bold mt-2" style="color: #f97316;">Static and erratic behaviors</p>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered gif-box">
-          <p class="is-size-6 has-text-weight-semibold">Simulation e86f0a2f</p>
-          <figure class="image">
-            <img src="static/gif/WOMD_Closed_loop_gif/Teacher/simulation_e86f0a2f4981774b.gif" alt="Teacher simulation e86f0a2f GIF" loading="lazy">
-          </figure>
-          <p class="is-size-6 has-text-weight-bold mt-2" style="color: #f97316;">Multi-agent crashes</p>
-        </div>
+      <div class="grid-nine">
+        <article class="demo-card"><div class="media-wrap"><img src="static/gif/Onsite_Benchmark_gif/REPLAY_0_av0_0202lanechanging12_result.gif" alt="Lane changing 0202 GIF"></div><div class="card-body"><h4 class="card-title">Lane Changing</h4></div></article>
+        <article class="demo-card"><div class="media-wrap"><img src="static/gif/Onsite_Benchmark_gif/REPLAY_1_av3_0_1049_merge_1066_result.gif" alt="Merge 1049 GIF"></div><div class="card-body"><h4 class="card-title">Roundabout</h4></div></article>
+        <article class="demo-card"><div class="media-wrap"><img src="static/gif/Onsite_Benchmark_gif/REPLAY_2_av1_0316follow286_result.gif" alt="Following 0316 GIF"></div><div class="card-body"><h4 class="card-title">Lane Following</h4></div></article>
+        <article class="demo-card"><div class="media-wrap"><img src="static/gif/Onsite_Benchmark_gif/REPLAY_33_av1_3_199_merge_203_result.gif" alt="Merge 199 GIF"></div><div class="card-body"><h4 class="card-title">Merging</h4></div></article>
+        <article class="demo-card"><div class="media-wrap"><img src="static/gif/Onsite_Benchmark_gif/REPLAY_37_av0_5_56_straight_straight_57_result.gif" alt="Straight 56 GIF"></div><div class="card-body"><h4 class="card-title">Unprotected Left Turn</h4></div></article>
+        <article class="demo-card"><div class="media-wrap"><img src="static/gif/Onsite_Benchmark_gif/REPLAY_41_av2_8_3_3_425_result.gif" alt="Scenario 425 GIF"></div><div class="card-body"><h4 class="card-title">Cross Intersection</h4></div></article>
+        <article class="demo-card"><div class="media-wrap"><img src="static/gif/Onsite_Benchmark_gif/REPLAY_47_av0_highway_merge_2_1_384_result.gif" alt="Highway merge 384 GIF"></div><div class="card-body"><h4 class="card-title">Highway Merge</h4></div></article>
+        <article class="demo-card"><div class="media-wrap"><img src="static/gif/Onsite_Benchmark_gif/REPLAY_198_av0_intersection_12_61_6_result.gif" alt="Intersection 12 GIF"></div><div class="card-body"><h4 class="card-title">T-Intersection</h4></div></article>
+        <article class="demo-card"><div class="media-wrap"><img src="static/gif/Onsite_Benchmark_gif/REPLAY_199_av3_mixed_128_34_0_result.gif" alt="Mixed scenario 128 GIF"></div><div class="card-body"><h4 class="card-title">Mixed Traffic</h4></div></article>
       </div>
     </div>
+  </section>
 
-    <p class="gif-section-title" style="background-color: #eff6ff; border-color: #2563eb; color: #2563eb;">CDPT</p>
-    <div class="columns">
-      <div class="column is-one-third">
-        <div class="box has-text-centered gif-box">
-          <p class="is-size-6 has-text-weight-semibold">Simulation 1dc26b75</p>
-          <figure class="image">
-            <img src="static/gif/WOMD_Closed_loop_gif/CDPT/simulation_1dc26b7531fd9e2f.gif" alt="CDPT simulation 1dc26b75 GIF" loading="lazy">
-          </figure>
-          <p class="is-size-6 has-text-weight-bold mt-2" style="color: #2563eb;">Stops at red lights and yields correctly</p>
+  <section class="section" id="bibtex">
+    <div class="container">
+      <span class="section-kicker">Citation</span>
+      <h2 class="section-title">BibTeX</h2>
+      <div class="bib-card">
+        <div class="bib-header">
+          <span class="bib-label">Citation</span>
+          <button class="copy-btn" onclick="copyBibtex()" id="copy-bibtex">Copy</button>
         </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered gif-box">
-          <p class="is-size-6 has-text-weight-semibold">Simulation 2a6ced5b</p>
-          <figure class="image">
-            <img src="static/gif/WOMD_Closed_loop_gif/CDPT/simulation_2a6ced5bbb486b15.gif" alt="CDPT simulation 2a6ced5b GIF" loading="lazy">
-          </figure>
-          <p class="is-size-6 has-text-weight-bold mt-2" style="color: #2563eb;">Smooth left turn and stable</p>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered gif-box">
-          <p class="is-size-6 has-text-weight-semibold">Simulation e86f0a2f</p>
-          <figure class="image">
-            <img src="static/gif/WOMD_Closed_loop_gif/CDPT/simulation_e86f0a2f4981774b.gif" alt="CDPT simulation e86f0a2f GIF" loading="lazy">
-          </figure>
-          <p class="is-size-6 has-text-weight-bold mt-2" style="color: #2563eb;">Smooth merge without collisions</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section is-light">
-  <div class="container">
-    <h2 class="title is-3">Closed-loop Simulation Performance on INTERACTION</h2>
-    <div class="content has-text-justified mb-5">
-      <p class="is-size-6">
-        <!-- TODO: Add description text for INTERACTION comparison here -->
-        To evaluate model generalization in diverse traffic environments, we conduct closed-loop simulation experiments on 498 dense, interaction-heavy scenarios from the INTERACTION dataset, contrasting with WOMD scenarios.
-      </p>
-    </div>
-
-    <p class="gif-section-title" style="background-color: #fff7ed; border-color: #f97316; color: #f97316;">Teacher</p>
-    <div class="columns">
-      <div class="column is-one-third">
-        <div class="box has-text-centered gif-box">
-          <p class="is-size-6 has-text-weight-semibold">DR_CHN_Merging_ZS0</p>
-          <figure class="image">
-            <img src="static/gif/INTERACTION_Closed_loop_gif/Baseline/DR_CHN_Merging_ZS0_BSL.gif" alt="Baseline DR_CHN_Merging_ZS0 GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered gif-box">
-          <p class="is-size-6 has-text-weight-semibold">DR_CHN_Roundabout_LN</p>
-          <figure class="image">
-            <img src="static/gif/INTERACTION_Closed_loop_gif/Baseline/DR_CHN_Roundabout_LN_BSL.gif" alt="Baseline DR_CHN_Roundabout_LN GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered gif-box">
-          <p class="is-size-6 has-text-weight-semibold">DR_USA_Intersection_GL</p>
-          <figure class="image">
-            <img src="static/gif/INTERACTION_Closed_loop_gif/Baseline/DR_USA_Intersection_GL_BSL.gif" alt="Baseline DR_USA_Intersection_GL GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </div>
-
-    <p class="gif-section-title" style="background-color: #eff6ff; border-color: #2563eb; color: #2563eb;">CDPT</p>
-    <div class="columns">
-      <div class="column is-one-third">
-        <div class="box has-text-centered gif-box">
-          <p class="is-size-6 has-text-weight-semibold">DR_CHN_Merging_ZS0</p>
-          <figure class="image">
-            <img src="static/gif/INTERACTION_Closed_loop_gif/CDPT/DR_CHN_Merging_ZS0_CDPT.gif" alt="CDPT DR_CHN_Merging_ZS0 GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered gif-box">
-          <p class="is-size-6 has-text-weight-semibold">DR_CHN_Roundabout_LN</p>
-          <figure class="image">
-            <img src="static/gif/INTERACTION_Closed_loop_gif/CDPT/DR_CHN_Roundabout_LN_CDPT.gif" alt="CDPT DR_CHN_Roundabout_LN GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered gif-box">
-          <p class="is-size-6 has-text-weight-semibold">DR_USA_Intersection_GL</p>
-          <figure class="image">
-            <img src="static/gif/INTERACTION_Closed_loop_gif/CDPT/DR_USA_Intersection_GL_CDPT.gif" alt="CDPT DR_USA_Intersection_GL GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2 class="title is-3">AV Testing Performance on OnSite Benchmark</h2>
-    <div class="content has-text-justified mb-5">
-      <p class="is-size-6">
-        <!-- TODO: Add description text for Onsite Benchmark here -->
-        Furthermore, we evaluate the effectiveness of the CDPT framework in closed-loop AV testing using the <a href="https://www.onsite.com.cn/#/dist/home" target="_blank" rel="noopener">OnSite</a> platform, a standardized benchmark for zero-shot scenario generation and safety-focused simulation. Each test case provides a high-definition map and a 31-frame prefix of agent states, requiring models to synthesize full traffic scenes based solely on partial observations. The benchmark includes a wide range of traffic scenarios such as merges, roundabouts, signalized intersections, and urban environments with vulnerable road users.
-      </p>
-    </div>
-    <div class="columns is-multiline">
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="is-size-6 has-text-weight-semibold">Lane Changing</p>
-          <figure class="image">
-            <img src="static/gif/Onsite_Benchmark_gif/REPLAY_0_av0_0202lanechanging12_result.gif" alt="Lane changing 0202 GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="is-size-6 has-text-weight-semibold">Roundabout</p>
-          <figure class="image">
-            <img src="static/gif/Onsite_Benchmark_gif/REPLAY_1_av3_0_1049_merge_1066_result.gif" alt="Merge 1049 GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="is-size-6 has-text-weight-semibold">Lane Following</p>
-          <figure class="image">
-            <img src="static/gif/Onsite_Benchmark_gif/REPLAY_2_av1_0316follow286_result.gif" alt="Following 0316 GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="is-size-6 has-text-weight-semibold">Merging</p>
-          <figure class="image">
-            <img src="static/gif/Onsite_Benchmark_gif/REPLAY_33_av1_3_199_merge_203_result.gif" alt="Merge 199 GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="is-size-6 has-text-weight-semibold">Unprotected Left Turn</p>
-          <figure class="image">
-            <img src="static/gif/Onsite_Benchmark_gif/REPLAY_37_av0_5_56_straight_straight_57_result.gif" alt="Straight 56 GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="is-size-6 has-text-weight-semibold">Cross Intersection</p>
-          <figure class="image">
-            <img src="static/gif/Onsite_Benchmark_gif/REPLAY_41_av2_8_3_3_425_result.gif" alt="Scenario 425 GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="is-size-6 has-text-weight-semibold">Highway Merge</p>
-          <figure class="image">
-            <img src="static/gif/Onsite_Benchmark_gif/REPLAY_47_av0_highway_merge_2_1_384_result.gif" alt="Highway merge 384 GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="is-size-6 has-text-weight-semibold">T-Intersection</p>
-          <figure class="image">
-            <img src="static/gif/Onsite_Benchmark_gif/REPLAY_198_av0_intersection_12_61_6_result.gif" alt="Intersection 12 GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="is-size-6 has-text-weight-semibold">Mixed Traffic</p>
-          <figure class="image">
-            <img src="static/gif/Onsite_Benchmark_gif/REPLAY_199_av3_mixed_128_34_0_result.gif" alt="Mixed scenario 128 GIF" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End GIF Galleries -->
-
-
-<!--BibTex citation -->
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <div class="bibtex-header">
-      <h2 class="title">BibTeX</h2>
-      <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-        <i class="fas fa-copy"></i>
-        <span class="copy-text">Copy</span>
-      </button>
-    </div>
-    <pre id="bibtex-code"><code>@inproceedings{chen2026transferring,
+        <pre><code id="bibtex-content">@inproceedings{chen2026transferring,
   title={Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation},
   author={Chen, Yuhang and Sun, Jie and Fan, Jialin and Sun, Jian},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
@@ -617,73 +901,70 @@
   doi={10.1609/aaai.v40i1.36970},
   url={https://doi.org/10.1609/aaai.v40i1.36970}
 }</code></pre>
-  </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
 
-<!-- Visitor Counter -->
-<div class="visitor-counter" style="text-align: center; padding: 1rem; background-color: var(--background-secondary); border-top: 1px solid var(--border-color);">
-  <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">
-    <i class="fas fa-eye" style="margin-right: 0.5rem;"></i>
-    Page Views: <span id="visit-count" style="font-weight: 600; color: var(--primary-color);">0</span>
-  </p>
-</div>
+  <footer class="footer">
+    <div class="container">
+      <div class="visitor-counter" aria-label="Visitor counter">
+        <span class="counter-icon" aria-hidden="true">◉</span>
+        <span class="counter-number" id="visitor-count-display">1,314</span>
+        <span class="counter-label">visits since launch</span>
+      </div>
+      <span class="busuanzi-raw-value" aria-hidden="true">
+        <span id="busuanzi_value_site_pv">0</span>
+      </span>
+      <br>
+      This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>, adopted from the <a href="https://nerfies.github.io" target="_blank" rel="noopener">Nerfies</a> project page. Licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    </div>
+  </footer>
 
-<script>
-  // Copy BibTeX to clipboard
-  function copyBibTeX() {
-    const bibtexCode = document.getElementById('bibtex-code').textContent;
-    navigator.clipboard.writeText(bibtexCode).then(function() {
-      const copyBtn = document.querySelector('.copy-bibtex-btn .copy-text');
-      const originalText = copyBtn.textContent;
-      copyBtn.textContent = 'Copied!';
-      setTimeout(function() {
-        copyBtn.textContent = originalText;
-      }, 2000);
-    }).catch(function(err) {
-      console.error('Failed to copy: ', err);
-      alert('Failed to copy BibTeX. Please copy manually.');
-    });
-  }
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script>
 
-  // Visitor counter using localStorage
-  (function() {
-    let count = localStorage.getItem('pageVisitCount');
-    if (count === null) {
-      count = 0;
-    } else {
-      count = parseInt(count);
+    const VISITOR_COUNT_OFFSET = 1314;
+
+    function formatVisitorCount(value) {
+      return Number(value).toLocaleString('en-US');
     }
-    count++;
-    localStorage.setItem('pageVisitCount', count);
-    document.getElementById('visit-count').textContent = count.toLocaleString();
-  })();
-</script>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    function updateVisitorCounter() {
+      const rawNode = document.getElementById('busuanzi_value_site_pv');
+      const displayNode = document.getElementById('visitor-count-display');
+      if (!rawNode || !displayNode) return;
 
-    <!-- End of Statcounter Code -->
+      const rawValue = parseInt(rawNode.innerText.replace(/,/g, ''), 10);
+      if (!Number.isNaN(rawValue) && rawValue > 0) {
+        displayNode.innerText = formatVisitorCount(VISITOR_COUNT_OFFSET + rawValue);
+      } else {
+        displayNode.innerText = formatVisitorCount(VISITOR_COUNT_OFFSET);
+      }
+    }
 
-  </body>
-  </html>
+    document.addEventListener('DOMContentLoaded', function() {
+      updateVisitorCounter();
+      const rawNode = document.getElementById('busuanzi_value_site_pv');
+      if (rawNode) {
+        const observer = new MutationObserver(updateVisitorCounter);
+        observer.observe(rawNode, { childList: true, characterData: true, subtree: true });
+      }
+      setTimeout(updateVisitorCounter, 1200);
+      setTimeout(updateVisitorCounter, 3000);
+    });
+
+    function copyBibtex() {
+      const text = document.getElementById('bibtex-content').innerText;
+      const button = document.getElementById('copy-bibtex');
+      navigator.clipboard.writeText(text).then(function() {
+        const oldText = button.innerText;
+        button.innerText = 'Copied!';
+        setTimeout(function() { button.innerText = oldText; }, 1600);
+      }).catch(function() {
+        button.innerText = 'Copy failed';
+        setTimeout(function() { button.innerText = 'Copy'; }, 1600);
+      });
+    }
+  </script>
+</body>
+</html>
